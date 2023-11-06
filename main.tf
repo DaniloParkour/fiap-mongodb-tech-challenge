@@ -5,14 +5,14 @@ provider "mongodbatlas" {
 
 # Create a Project
 resource "mongodbatlas_project" "my_project" {
-  name   = "fiapFoodtruck"
+  name   = var.atlas_project_name
   org_id = var.atlas_org_id
 }
 
 # Create a Shared Tier Cluster
 resource "mongodbatlas_cluster" "my_cluster" {
   project_id              = mongodbatlas_project.my_project.id
-  name                    = "fiapClusterFood"
+  name                    = var.atlas_project_cluster_name
 
   # Provider Settings "block"
   provider_name = "TENANT"

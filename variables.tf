@@ -8,6 +8,11 @@ variable "atlas_project_name" {
   description = "Atlas Project Name"
 }
 
+variable "atlas_project_cluster_name" {
+  type        = string
+  description = "Atlas Project Cluster Name"
+}
+
 variable "mongodb_atlas_public_key" {
   type        = string
   description = "Atlas Public Key"
