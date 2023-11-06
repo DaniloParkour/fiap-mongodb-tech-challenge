@@ -63,6 +63,11 @@ variable "ip_address" {
   description = "IP address used to access Atlas cluster"
 }
 
+variable "cidr_block" {
+  type = string
+  description = "IP address used to access Atlas cluster"
+}
+
 variable "aws_region" {
   type = string
   description = "AWS Region"
