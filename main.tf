@@ -48,12 +48,12 @@ resource "mongodbatlas_database_user" "my_user" {
 # can also take a CIDR block or AWS Security Group -
 # replace ip_address with either cidr_block = "CIDR_NOTATION"
 # or aws_security_group = "SECURITY_GROUP_ID"
-resource "mongodbatlas_project_ip_access_list" "my_ipaddress" {
-      project_id = mongodbatlas_project.my_project.id
+#resource "mongodbatlas_project_ip_access_list" "my_ipaddress" {
+#      project_id = mongodbatlas_project.my_project.id
       # ip_address = var.ip_address
-      # cidr_block = var.cidr_block
-      comment    = "My IP Address"
-}
+#      cidr_block = var.cidr_block
+#      comment    = "My IP Address"
+#}
 
 # Use terraform output to display connection strings
 output "connection_strings" {
