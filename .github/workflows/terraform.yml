@@ -13,8 +13,9 @@ jobs:
       - uses: actions/checkout@v3
       - uses: hashicorp/setup-terraform@v2
         env:
-          atlas_org_id: ${{ secrets.ATLAS_ORG_ID }}
-          mongodb_atlas_private_key: ${{ secrets.MONGODB_ATLAS_PRIVATE_KEY }}
+          MONGODB_ATLAS_PUBLIC_KEY: ${{ secrets.ATLAS_ORG_ID }}
+          MONGODB_ATLAS_PRIVATE_KEY: ${{ secrets.MONGODB_ATLAS_PRIVATE_KEY }}
+
       - run: terraform init
       - name: Terraform plan
         id: plan
