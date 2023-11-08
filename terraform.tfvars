@@ -1,4 +1,4 @@
-mongodb_atlas_public_key = "pylrmibs"
+#mongodb_atlas_public_key = "pylrmibs"
 atlas_project_name = "fiapFoodtruck"
 atlas_project_cluster_name = "fiapClusterFood"
 environment = "dev"
