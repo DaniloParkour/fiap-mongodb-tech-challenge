@@ -1,3 +1,7 @@
+provider "mongodbatlas" {
+  public_key  = var.mongodb_atlas_public_key
+}
+
 # Create a Project
 resource "mongodbatlas_project" "my_project" {
   name   = var.atlas_project_name
